@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanzanite Chat - Feed</title>
+    <link rel="stylesheet" href="css/feed.css">
+</head>
+<body>
+    <header>
+        <h1>Tanzanite Chat</h1>
+        <div class="user-info">
+            <span id="usernameDisplay"></span>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </header>
+
+    <section class="create-post">
+        <textarea id="postContent" placeholder="What's on your mind?"></textarea>
+        <button onclick="addPost()">Post</button>
+    </section>
+
+    <section id="postList" class="posts">
+        <!-- Posts will load here -->
+    </section>
+
+    <script src="js/feed.js"></script>
+</body>
+</html>

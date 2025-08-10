@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mazungumzo - Tanzanite Chat</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Karibu, <span id="currentUser"></span>!</h1>
+    
+    <div id="chatBox" style="height: 300px; overflow-y: auto; background-color: rgba(255,255,255,0.1); padding: 10px; margin-bottom: 20px; border-radius: 10px;">
+      <!-- Ujumbe utaonyeshwa hapa -->
+    </div>
+
+    <form id="chatForm">
+      <input type="text" id="chatInput" placeholder="Andika ujumbe hapa..." required style="width: 70%; padding: 10px; border-radius: 5px;" />
+      <button type="submit" class="btn">Tuma</button>
+    </form>
+
+    <br />
+    <a href="index.html" class="btn" style="background-color: crimson;">Toka</a>
+  </div>
+
+  <script src="js/chat.js"></script>
+  <script>
+  const user = localStorage.getItem("loggedInUser");
+  const profileImage = localStorage.getItem("profileImage");
+
+  if (!user) {
+    window.location.href = "login.html";
+  } else {
+    document.getElementById("chatUsername").innerText = user;
+  }
+
+  if (profileImage) {
+    document.getElementById("chatProfilePic").src = profileImage;
+  }
+</script>
+
+</body>
+</html>

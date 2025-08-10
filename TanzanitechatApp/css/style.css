@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #003366;
+    color: gold;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Search */
+.search-container {
+    text-align: center;
+    margin: 10px;
+}
+.search-container input {
+    padding: 8px;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Post Creator */
+.post-creator {
+    background: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.post-creator input, .post-creator textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 5px;
+}
+.post-creator button {
+    background-color: #003366;
+    color: gold;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Post */
+.post {
+    background: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.post-header {
+    font-weight: bold;
+}
+.post-time {
+    font-size: 0.8em;
+    color: gray;
+}
+.post-actions {
+    margin-top: 8px;
+}
+.like-btn, .comment-btn {
+    margin-right: 10px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 14px;
+}
+
+/* Gold Shine Animation */
+@keyframes gold-shine {
+    0% {
+        background: linear-gradient(45deg, #d4af37, #ffd700, #d4af37);
+        background-size: 200% 200%;
+        transform: scale(1);
+    }
+    50% {
+        background-position: right center;
+        transform: scale(1.1);
+    }
+    100% {
+        background-position: left center;
+        transform: scale(1);
+    }
+}
+
+.like-btn.liked {
+    background: linear-gradient(45deg, #d4af37, #ffd700, #d4af37);
+    background-size: 200% 200%;
+    color: white;
+    animation: gold-shine 0.6s ease forwards;
+    border-radius: 5px;
+    padding: 5px 10px;
+}

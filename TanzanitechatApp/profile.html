@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profile - Tanzanite Chat</title>
+  <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+  <div class="profile-container">
+    <h2>👤 Profile ya Mtumiaji</h2>
+    
+    <div class="profile-picture">
+      <img id="profileImage" src="images/default-profile.png" alt="Profile Picture" />
+      <input type="file" accept="image/*" onchange="uploadProfilePicture(event)">
+    </div>
+
+    <div class="profile-info">
+      <label>Jina la Mtumiaji:</label>
+      <p id="usernameDisplay"></p>
+    </div>
+
+    <a href="dashboard.html" class="btn-back">🔙 Rudi Dashboard</a>
+  </div>
+
+  <script src="js/profile.js"></script>
+</body>
+</html>

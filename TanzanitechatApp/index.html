@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanzanite Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tanzanite Chat</h1>
+    </header>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search posts...">
+    </div>
+
+    <!-- Create Post -->
+    <div class="post-creator">
+        <input type="text" id="username" placeholder="Your Name">
+        <textarea id="postContent" placeholder="What's on your mind?"></textarea>
+        <button onclick="createPost()">Post</button>
+    </div>
+
+    <!-- Posts Container -->
+    <div id="posts-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
